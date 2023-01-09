@@ -1,5 +1,17 @@
 $(function () {
     allfunctions()
+
+    $.ajax(
+        {
+            url: 'popunitabeludb.php',
+            success: function (muzeji) {
+
+                $('.muzej-tabela-index').html(muzeji);
+
+            }
+        }
+    )
+
 });
 
 
@@ -17,8 +29,8 @@ function allfunctions() {
 
 
         if (naziv == '' || adresa == '' || telefon == '' || sajt == '') {
-            alert("Polja ne mogu biti prazna");
-            return;
+            alert("Polja ne mogu biti prazna")
+            return
         }
 
 

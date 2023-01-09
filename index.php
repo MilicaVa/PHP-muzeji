@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -12,20 +13,20 @@
 <body>
     <div class="index-1">
 
-        <h2 class="muzej-h2">Muzej</h2>
-
         <div class="muzej-index">
+            <h2 class="muzej-h2">Muzej</h2>
+
             <div class="muzej-info">
                 <span>Naziv: </span>
-                <input type="text" id="naziv-m">
+                <input type="text" class="form-control" id="naziv-m">
             </div>
             <div class="muzej-info">
                 <span>Adresa: </span>
-                <input type="text" id="adresa-m">
+                <input type="text" class="form-control" id="adresa-m">
             </div>
             <div class="muzej-info">
                 <span>Direktor: </span>
-                <select id="direktor-m">
+                <select id="direktor-m" class="form-select">
                     <?php
                     include('Direktor.php');
                     $direktori = Direktor::getDirektore();
@@ -41,7 +42,7 @@
             </div>
             <div class="muzej-info">
                 <span>Grad: </span>
-                <select id="grad-m">
+                <select id="grad-m" class="form-select">
                     <?php
                     include('Grad.php');
                     $gradovi = Grad::getGradove();
@@ -57,17 +58,19 @@
             </div>
             <div class="muzej-info">
                 <span>Telefon: </span>
-                <input type="text" id="telefon-m">
+                <input type="text" class="form-control" id="telefon-m">
             </div>
             <div class="muzej-info">
                 <span>Sajt: </span>
-                <input type="text" id="sajt-m">
+                <input type="text" class="form-control" id="sajt-m">
             </div>
 
-            <button type="button" id="button-save">Unesi</button>
+            <button type="button" class="btn btn-primary" id="button-save">Unesi</button>
         </div>
 
+        <div class="muzej-tabela-index">
 
+        </div>
 
     </div>
 
