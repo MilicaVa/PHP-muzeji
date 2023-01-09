@@ -12,4 +12,18 @@ class Grad
         $this->naziv = $naziv;
         $this->gradonacelnik = $gradonacelnik;
     }
+
+    public static function getGradove()
+    {
+        $conn = new mysqli("localhost", "root", "", "muzej");
+        $SQL = "SELECT * FROM grad";
+        $result = $conn->query($SQL);
+
+        $gradovi = [];
+        while ($grd = mysqli_fetch_assoc($result)) {
+            $gradovi[] = $grd;
+        }
+
+        return $gradovi;
+    }
 }

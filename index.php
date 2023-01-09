@@ -25,11 +25,35 @@
             </div>
             <div class="muzej-info">
                 <span>Direktor: </span>
-                <select id="direktor-m"></select>
+                <select id="direktor-m">
+                    <?php
+                    include('Direktor.php');
+                    $direktori = Direktor::getDirektore();
+                    foreach ($direktori as $direktor) {
+                    ?>
+                        <option value="<?php echo $direktor->direktor_id; ?>">
+                            <?php echo $direktor['ime'] . " " . $direktor['prezime'] ?>
+                        </option>
+                    <?php
+                    }
+                    ?>
+                </select>
             </div>
             <div class="muzej-info">
                 <span>Grad: </span>
-                <select id="grad-m"></select>
+                <select id="grad-m">
+                    <?php
+                    include('Grad.php');
+                    $gradovi = Grad::getGradove();
+                    foreach ($gradovi as $grad) {
+                    ?>
+                        <option value="<?php echo $grad->grad; ?>">
+                            <?php echo $grad['naziv'] ?>
+                        </option>
+                    <?php
+                    }
+                    ?>
+                </select>
             </div>
             <div class="muzej-info">
                 <span>Telefon: </span>
