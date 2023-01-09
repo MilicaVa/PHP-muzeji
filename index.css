@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.muzej-h2 {
+    font-size: 60px;
+    margin-top: 5vh;
+    margin-left: 32vh;
+}
+
+.muzej-index {
+    margin-left: 25vh;
+    margin-top: 5vh;
+}
+
+.muzej-info {
+    font-size: 30px;
+    margin-bottom: 2vh;
+}
+
+#button-save {
+    font-size: 20px;
+    margin-left: 12vh;
+}
