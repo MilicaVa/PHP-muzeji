@@ -31,7 +31,7 @@
                     $direktori = Direktor::getDirektore();
                     foreach ($direktori as $direktor) {
                     ?>
-                        <option value="<?php echo $direktor->direktor_id; ?>">
+                        <option value="<?php echo $direktor['direktor_id'] ?>">
                             <?php echo $direktor['ime'] . " " . $direktor['prezime'] ?>
                         </option>
                     <?php
@@ -47,7 +47,7 @@
                     $gradovi = Grad::getGradove();
                     foreach ($gradovi as $grad) {
                     ?>
-                        <option value="<?php echo $grad->grad; ?>">
+                        <option value="<?php echo $grad['grad_id'] ?>">
                             <?php echo $grad['naziv'] ?>
                         </option>
                     <?php
@@ -70,6 +70,9 @@
 
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.js"></script>
 </body>
 
 </html>
