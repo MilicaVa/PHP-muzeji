@@ -5,7 +5,7 @@
 
 .muzej-h2 {
     font-size: 60px;
-    margin-left: 4vh;
+    margin-left: 6vh;
     margin-bottom: 5vh;
 }
 
@@ -17,12 +17,13 @@
 .muzej-info {
     font-size: 30px;
     margin-bottom: 2vh;
+    width: 30vh;
 }
 
 #button-save {
     font-size: 20px;
-    margin-left: 6vh;
-    width: 12vh;
+    margin-left: 7vh;
+    width: 15vh;
 }
 
 .index-1 {
@@ -32,6 +33,6 @@
 .muzej-tabela-index {
     font-size: 25px;
     width: 125vh;
-    margin-left: 20vh;
+    margin-left: 15vh;
     margin-top: 20vh;
 }

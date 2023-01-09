@@ -3,11 +3,11 @@
 
     <thead>
         <tr class="text-center table-primary border-primary">
-            <th>ID</th>
-            <th>Naziv</th>
-            <th>Adresa</th>
-            <th>Grad</th>
-            <th>Direktor</th>
+            <th onclick="numberTableSort(this,true)">ID</th>
+            <th onclick="tableSort(this)">Naziv</th>
+            <th onclick="tableSort(this)">Adresa</th>
+            <th onclick="tableSort(this)">Grad</th>
+            <th onclick="tableSort(this)">Direktor</th>
             <th>Telefon</th>
             <th>Sajt</th>
         </tr>
