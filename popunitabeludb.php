@@ -6,6 +6,7 @@
 
      <thead>
          <tr class="text-center table-primary border-primary">
+             <th>X</th>
              <th onclick="numberTableSort(this,true)">ID</th>
              <th onclick="tableSort(this)">Naziv</th>
              <th onclick="tableSort(this)">Adresa</th>
@@ -28,6 +29,7 @@
             while ($muzej = mysqli_fetch_assoc($result)) {
             ?>
              <tr class="text-center">
+                 <td muzej_id='<?php echo $muzej['muzej_id'] ?>' class="X">X</td>
                  <td><?php echo $muzej['muzej_id']; ?></td>
                  <td><?php echo $muzej['naziv'];  ?></td>
                  <td><?php echo $muzej['adresa'];  ?></td>

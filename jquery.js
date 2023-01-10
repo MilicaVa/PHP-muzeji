@@ -54,7 +54,7 @@ function allfunctions() {
         })
     })
 
-    
+
 
 
     $(document).on('click', '#button-search', function () {
@@ -80,5 +80,27 @@ function allfunctions() {
             }
         })
     })
+
+
+
+    $(document).on('click', '.X', function () {
+
+        var muzej_id = $(this).attr('muzej_id')
+
+
+        $.ajax({
+            url: 'deletedb.php',
+            method: 'POST',
+            data: {
+                P_muzej_id: muzej_id,
+            },
+
+            success: function () {
+                alert("Muzej je obrisan")
+                window.location.href = "index.php"
+            }
+        })
+    })
+
 
 }

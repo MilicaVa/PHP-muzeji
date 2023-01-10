@@ -11,6 +11,7 @@ $result = $conn->query($SQL);
 while ($muzej = mysqli_fetch_assoc($result)) {
 ?>
     <tr class="text-center">
+        <td muzej_id='<?php echo $muzej['muzej_id'] ?>' class="X">X</td>
         <td><?php echo $muzej['muzej_id']; ?></td>
         <td><?php echo $muzej['naziv'];  ?></td>
         <td><?php echo $muzej['adresa'];  ?></td>
