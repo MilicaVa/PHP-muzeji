@@ -54,6 +54,31 @@ function allfunctions() {
         })
     })
 
+    
 
+
+    $(document).on('click', '#button-search', function () {
+
+        var unos = $('#search-value').val()
+
+
+        if (unos == '') {
+            alert("Unesite naziv ili grad u kom se nalazi muzej")
+            return
+        }
+
+
+        $.ajax({
+            url: 'searchdb.php',
+            method: 'POST',
+            data: {
+                P_unos: unos,
+            },
+
+            success: function (data) {
+                $('tbody').html(data)
+            }
+        })
+    })
 
 }
